@@ -102,11 +102,8 @@ const CheckoutForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || items.length === 0}
-                className={`w-full mt-8 ${
-                  isSubmitting || items.length === 0
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : " from-rose-400 to-orange-400 hover:from-rose-500 hover:to-orange-500"
-                } text-white font-semibold tracking-wider uppercase px-10 py-3 rounded-lg text-base shadow-md transition duration-150 ease-in-out`}
+                style={{ backgroundColor: '#FF6467' }}
+                className="w-full mt-8 text-white font-semibold tracking-wider uppercase px-10 py-3 rounded-lg text-base shadow-md transition duration-150 ease-in-out hover:bg-rose-500"
               >
                 {isSubmitting ? "Placing Order..." : "Place Order"}
               </button>
