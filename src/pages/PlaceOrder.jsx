@@ -105,7 +105,7 @@ const CheckoutForm = () => {
                 className={`w-full mt-8 ${
                   isSubmitting || items.length === 0
                     ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-gradient-to-r from-rose-400 to-orange-400 hover:from-rose-500 hover:to-orange-500"
+                    : " from-rose-400 to-orange-400 hover:from-rose-500 hover:to-orange-500"
                 } text-white font-semibold tracking-wider uppercase px-10 py-3 rounded-lg text-base shadow-md transition duration-150 ease-in-out`}
               >
                 {isSubmitting ? "Placing Order..." : "Place Order"}
