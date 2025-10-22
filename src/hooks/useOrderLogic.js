@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 // 💡 Import the custom hook for confirmation
 import { useConfirm } from '../api/ConfirmationContext.jsx'; 
-
+import { updateStock } from "../api/updateStock.js";
 const API_URL = `${import.meta.env.VITE_BACKEND_URL}/api/show-orders`;
 
 export const useOrderLogic = () => {

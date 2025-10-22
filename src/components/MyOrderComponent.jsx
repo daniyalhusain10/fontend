@@ -205,7 +205,7 @@ const MyOrder = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-indigo-50">
+    <div className="min-h-screen  from-gray-50 via-white to-indigo-50">
       <Navbar />
       <motion.div
         initial={{ y: -100, opacity: 0 }}
