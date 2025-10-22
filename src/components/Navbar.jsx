@@ -5,7 +5,7 @@ import { IoBagHandleOutline, IoSearchOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { motion } from "framer-motion";
-import { useNavbarLogic } from "../hooks/useNavbarLogic";
+import { useNavbarLogic } from "../hooks/useNavbarLogic.js";
 
 const links = [
   { to: "/home", label: "Home" },

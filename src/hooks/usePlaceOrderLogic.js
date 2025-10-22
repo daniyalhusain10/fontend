@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
-import ShopContext from "../api/ShopContext";
-import { useAuth } from "../api/AuthContext";
-import { updateStock } from "../api/UpdateStock";
+import ShopContext from "../api/ShopContext.jsx";
+import { useAuth } from "../api/AuthContext.jsx";
+import { updateStock } from "../api/updateStock.js";
 
 /**
  * Custom hook to handle the complex business logic for the CheckoutForm.

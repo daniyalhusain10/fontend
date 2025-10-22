@@ -1,5 +1,5 @@
 import React from 'react'
-import AllProductComponent from '../components/AllProductComponent'
+import AllProductComponent from '../components/AllProductComponent.jsx'
 const AllProduct = () => {
   return (
     <div>

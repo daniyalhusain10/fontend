@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import ShopContext from "../api/ShopContext";
+import ShopContext from "../api/ShopContext.jsx";
 import { useLoading } from "../api/LoadingContext.jsx";
 
 const BACKEND_URL = `${import.meta.env.VITE_BACKEND_URL}/api`;

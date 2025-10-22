@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import ShopContext from "../api/ShopContext";
+import ShopContext from "../api/ShopContext.jsx";
 import { MdDelete } from "react-icons/md";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 
 const Cart = () => {
   const {

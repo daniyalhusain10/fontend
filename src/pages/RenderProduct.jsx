@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import ShopContext from "../api/ShopContext";
-import Button from "../components/Button";
+import ShopContext from "../api/ShopContext.jsx";
+import Button from "../components/Button.jsx";
 
 // ... (colorMap remains the same)
 

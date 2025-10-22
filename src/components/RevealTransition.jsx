@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import gsap from "gsap";
-import { useTransition } from "../api/MiniLoaderContext";
+import { useTransition } from "../api/MiniLoaderContext.jsx";
 
 const RevealerTransition = () => {
   const overlayRef = useRef(null);

@@ -1,5 +1,5 @@
 import React from 'react'
-import MyOrder from '../components/MyOrderComponent'
+import MyOrder from '../components/MyOrderComponent.jsx'
 
 const Myorder = () => {
   return (

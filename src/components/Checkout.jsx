@@ -1,5 +1,5 @@
 import React, { useContext, useMemo } from "react";
-import ShopContext from "../api/ShopContext";
+import ShopContext from "../api/ShopContext.jsx";
 
 const Checkout = () => {
   const { cartItems, products, currency } = useContext(ShopContext);

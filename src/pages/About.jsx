@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion'; 
 // Import necessary dependencies
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar'; 
+import Navbar from '../components/Navbar.jsx'; 
 
 const About = () => {
   const navigate = useNavigate(); // Hook to enable navigation for the button

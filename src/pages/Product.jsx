@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { useProductPageLogic } from "../hooks/useProductPageLogic.js";

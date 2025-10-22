@@ -2,9 +2,9 @@
 import { useState, useEffect, useContext, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import gsap from "gsap";
-import ShopContext from "../api/ShopContext";
-import { useAuth } from "../api/AuthContext";
-import { useTransition } from "../api/MiniLoaderContext";
+import ShopContext from "../api/ShopContext.jsx";
+import { useAuth } from "../api/AuthContext.jsx";
+import { useTransition } from "../api/MiniLoaderContext.jsx";
 
 export const useNavbarLogic = () => {
   const navigate = useNavigate();

@@ -1,8 +1,8 @@
 // src/components/ProtectedRoute.jsx
 import React from "react";
 import { Navigate } from "react-router-dom";
-import { useAuth } from "../api/AuthContext";
-import LoadingScreen from "./LoadingScreen";
+import { useAuth } from "../api/AuthContext.jsx";
+import LoadingScreen from "./LoadingScreen.jsx";
 
 const ProtectedRoute = ({ children, adminOnly = false }) => {
   const { isLoggedIn, isLoading, hasValidUser } = useAuth();

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 
 // ===== ICONS =====
 const IconBox = (props) => (

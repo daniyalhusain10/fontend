@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import gsap from "gsap";
-import ElasticCarousel from "../components/ElasticCrousel";
+import ElasticCarousel from "../components/ElasticCrousel.jsx";
 
 const Banner = () => {
   const navigate = useNavigate();

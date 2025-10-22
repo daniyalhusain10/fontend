@@ -1,7 +1,7 @@
 import React, { useContext, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import ShopContext from "../api/ShopContext";
+import Navbar from "../components/Navbar.jsx";
+import ShopContext from "../api/ShopContext.jsx";
 
 const AllProduct = () => {
   const {

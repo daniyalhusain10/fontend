@@ -2,10 +2,10 @@
 
 import React from "react";
 import { useForm } from "react-hook-form";
-import Checkout from "../components/Checkout";
-import Navbar from "../components/Navbar";
+import Checkout from "../components/Checkout.jsx";
+import Navbar from "../components/Navbar.jsx";
 import { Toaster } from "react-hot-toast";
-import usePlaceOrderLogic from "../hooks/usePlaceOrderLogic"; // Import the custom hook
+import usePlaceOrderLogic from "../hooks/usePlaceOrderLogic.js"; // Import the custom hook
 
 const CheckoutForm = () => {
   // Initialize react-hook-form
