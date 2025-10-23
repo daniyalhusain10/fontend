@@ -16,51 +16,7 @@ const CONTAINER_PADDING = 24;
 const LARGE_SCREEN_BREAKPOINT = 1024; // Tailwind's 'lg'
 
 const ElasticCarousel = () => {
- // 🚫 Strictly block page reloads for this page only
-useEffect(() => {
-  const blockReload = (e) => {
-    e.preventDefault();
-    e.returnValue = "";
-    return "";
-  };
-
-  const blockKey = (e) => {
-    const key = e.key.toLowerCase();
-
-    // F5 or Ctrl/Cmd + R → Block
-    if (key === "f5" || ((e.ctrlKey || e.metaKey) && key === "r")) {
-      e.preventDefault();
-      e.stopPropagation();
-      alert("🚫 Page reload is disabled on this screen.");
-    }
-
-    // Ctrl/Cmd + Shift + R (force reload)
-    if ((e.ctrlKey || e.metaKey) && e.shiftKey && key === "r") {
-      e.preventDefault();
-      e.stopPropagation();
-      alert("🚫 Force reload is disabled on this screen.");
-    }
-  };
-
-  const blockContext = (e) => {
-    const targetText = e.target?.innerText?.toLowerCase() || "";
-    if (targetText.includes("reload") || targetText.includes("refresh")) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  };
-
-  window.addEventListener("beforeunload", blockReload);
-  window.addEventListener("keydown", blockKey, true);
-  window.addEventListener("contextmenu", blockContext, true);
-
-  return () => {
-    window.removeEventListener("beforeunload", blockReload);
-    window.removeEventListener("keydown", blockKey, true);
-    window.removeEventListener("contextmenu", blockContext, true);
-  };
-}, []);
---
+ 
   const { products } = useContext(ShopContext);
 
   const carouselRef = useRef(null);
